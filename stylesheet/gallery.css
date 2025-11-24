@@ -1,80 +1,208 @@
-/* --- GENERAL PAGE STYLES --- */
+/* ----------------------------------------------------
+   GENERAL PAGE + HEADER + FOOTER ALIGNMENT
+---------------------------------------------------- */
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    background: #fdfdfd;
+    color: #222;
+}
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: royalblue;
+    font-weight: 700;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px 0 20px;
+    list-style: none;
+    margin: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.nav a:hover {
+    color: royalblue;
+}
+
+footer {
+    background: #f8f9fb;           /* light gray-blue */
+    padding: 30px 0 20px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: #333;
+    border-top: 1px solid #e0e4ea;
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+footer .links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+footer .links li {
+    display: inline;
+}
+
+footer .links a {
+    color: royalblue;              /* ACCENT COLOR */
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+footer .links a:hover {
+    text-decoration: underline;
+}
+
+footer .copy a {
+    color: royalblue;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer .copy a:hover {
+    text-decoration: underline;
+}
+
+footer .certified em {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+footer .valid {
+    margin-top: 12px;
+}
+
+
+
+/* ----------------------------------------------------
+   GALLERY PAGE SECTION
+---------------------------------------------------- */
+
+main h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+/* ----------------------------------------------------
+   GALLERY WRAPPER
+---------------------------------------------------- */
+
 #gallery {
     width: 90%;
     max-width: 900px;
     margin: auto;
     text-align: center;
     padding-bottom: 40px;
-    color: #222;
-    font-family: "Inter", sans-serif;
 }
 
 #gallery h2 {
     margin-top: 40px;
-    font-size: 1.9rem;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
     font-weight: 600;
-    color: #1a1a1a;
+    color: #111;
 }
 
-/* --- CAROUSEL WRAPPER --- */
+/* ----------------------------------------------------
+   CAROUSEL BOX
+---------------------------------------------------- */
+
 .carousel {
     position: relative;
     margin: 20px auto 50px;
     overflow: hidden;
     width: 100%;
-    background: #fafafa;
-    border: 1px solid #e6e6e6;
+    background: #f7f8fc;           /* subtle soft gray-blue */
+    border: 1px solid #dfe3ee;
     border-radius: 14px;
-    padding: 15px 0 25px;
+    padding: 20px 0 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
-/* --- CAROUSEL TRACK --- */
+/* ----------------------------------------------------
+   IMAGE SLIDER TRACK
+---------------------------------------------------- */
+
 .carousel-track {
     display: flex;
     transition: transform 0.4s ease-in-out;
-    width: 100%;
 }
 
 .carousel-track figure {
     min-width: 100%;
     margin: 0;
-    padding: 0 20px;
+    padding: 0 18px;
 }
 
 .carousel-track img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    border: 1px solid #ddd;
+    border-radius: 12px;
+    border: 1px solid #d4d9e2;
     background: #fff;
 }
 
-/* --- FIGCAPTION --- */
 .carousel-track figcaption {
     margin-top: 12px;
-    font-size: 0.92rem;
-    color: #444;
+    font-size: 0.95rem;
+    color: #555;
 }
 
-/* --- ARROWS --- */
+/* ----------------------------------------------------
+   NAVIGATION ARROWS
+---------------------------------------------------- */
+
 .carousel button {
     position: absolute;
     top: 45%;
     transform: translateY(-50%);
-    background: royalblue;             /* ACCENT COLOR */
+    background: royalblue;         /* ACCENT */
     color: white;
     border: none;
     padding: 10px 14px;
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
     border-radius: 50%;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    transition: background 0.25s, transform 0.2s;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.16);
+    transition: 0.25s;
 }
 
 .carousel button:hover {
-    background: #224cce;               /* slightly darker */
-    transform: scale(1.07);
+    background: #214ed0;
+    transform: scale(1.08);
 }
 
 .carousel .prev {
@@ -85,13 +213,14 @@
     right: 12px;
 }
 
-/* --- Counter --- */
+/* ----------------------------------------------------
+   COUNTER TEXT
+---------------------------------------------------- */
+
 .carousel .counter {
-    margin-top: 14px;
+    margin-top: 16px;
     font-size: 1rem;
     font-weight: 600;
-    color: royalblue;                   /* ACCENT COLOR */
+    color: royalblue;              /* ACCENT */
     letter-spacing: 0.5px;
 }
-
-
