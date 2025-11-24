@@ -1,0 +1,97 @@
+/* --- GENERAL PAGE STYLES --- */
+#gallery {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 40px;
+    color: #222;
+    font-family: "Inter", sans-serif;
+}
+
+#gallery h2 {
+    margin-top: 40px;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+/* --- CAROUSEL WRAPPER --- */
+.carousel {
+    position: relative;
+    margin: 20px auto 50px;
+    overflow: hidden;
+    width: 100%;
+    background: #fafafa;
+    border: 1px solid #e6e6e6;
+    border-radius: 14px;
+    padding: 15px 0 25px;
+}
+
+/* --- CAROUSEL TRACK --- */
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+}
+
+.carousel-track figure {
+    min-width: 100%;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.carousel-track img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+/* --- FIGCAPTION --- */
+.carousel-track figcaption {
+    margin-top: 12px;
+    font-size: 0.92rem;
+    color: #444;
+}
+
+/* --- ARROWS --- */
+.carousel button {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background: royalblue;             /* ACCENT COLOR */
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: background 0.25s, transform 0.2s;
+}
+
+.carousel button:hover {
+    background: #224cce;               /* slightly darker */
+    transform: scale(1.07);
+}
+
+.carousel .prev {
+    left: 12px;
+}
+
+.carousel .next {
+    right: 12px;
+}
+
+/* --- Counter --- */
+.carousel .counter {
+    margin-top: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: royalblue;                   /* ACCENT COLOR */
+    letter-spacing: 0.5px;
+}
+
+
