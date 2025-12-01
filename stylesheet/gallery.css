@@ -37,6 +37,14 @@ main p {
     color: #1f1f1f;
 }
 
+figcaption 
+{
+    font-size: 1rem;
+    color: #666;
+    margin-top: 8px;
+    text-align: center;
+}
+
 /* ----------------------------------------------------
    CAROUSEL BOX
 ---------------------------------------------------- */
@@ -49,7 +57,10 @@ main p {
     background: #f7f8fc;           /* subtle soft gray-blue */
     border: 1px solid #dfe3ee;
     border-radius: 14px;
-    padding: 20px 0 30px;
+
+    /* NEW → spacing so arrows do not overlap image */
+    padding: 20px 60px 30px;
+
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
@@ -99,6 +110,7 @@ main p {
     border-radius: 50%;
     box-shadow: 0 3px 10px rgba(0,0,0,0.16);
     transition: 0.25s;
+    z-index: 10;                    /* ensure arrows stay above image */
 }
 
 .carousel button:hover {
